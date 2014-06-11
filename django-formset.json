@@ -1,0 +1,33 @@
+{
+	"name": "django-formset",
+	"title": "jQuery Django Formset",
+	"description": "A simple and light javascript formset handler for django.",
+	"keywords": [
+		"jquery",
+		"django",
+		"formset"
+	],
+	"version": "1.0.1",
+	"author": {
+		"name": "Harley Jessop",
+		"email": "harleyjessop@gmail.com",
+		"url": "https://github.com/northborn"
+	},
+	"maintainers": [
+		{
+			"name": "Harley Jessop",
+			"email": "harleyjessop@gmail.com",
+			"url": "https://github.com/northborn"
+		}
+	],
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "http://zenorocha.mit-license.org/"
+		}
+	],
+	"dependencies": {
+		"jquery": ">=1.9",
+        "handlebars": "1.3.0"
+	}
+}

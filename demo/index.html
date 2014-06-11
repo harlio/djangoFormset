@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Django jQuery Formset</title>
+        <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../dist/css/nodetree.css">
+        <style>
+            body {
+                padding: 2rem;
+            }
+        </style>
+	</head>
+	<body>
+        <h1>Herro World</h1>
+
+        <!-- bower:js -->
+        <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../bower_components/handlebars/handlebars.js"></script>
+        <script src="../bower_components/underscore/underscore.js"></script>
+        <!-- endbower -->
+		<script src="../dist/js/jquery.django-formset.js"></script>
+		<script>
+            $(function() {
+                $(".nt").djangoFormset();
+            });
+		</script>
+	</body>
+</html>
