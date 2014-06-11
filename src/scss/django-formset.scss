@@ -1,0 +1,11 @@
+$df-css-prefix:       df !default;
+$df-version:          "1.0.1" !default;
+
+.#{$df-css-prefix} {
+
+    &,
+    * {
+        box-sizing: border-box;
+    }
+}
+

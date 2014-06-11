@@ -3,26 +3,68 @@
 	<head>
 		<title>Django jQuery Formset</title>
         <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="../dist/css/nodetree.css">
+        <link rel="stylesheet" href="../bower_components/fontawesome/css/font-awesome.min.css">
         <style>
             body {
                 padding: 2rem;
             }
+            .row {
+                margin-top: 1rem;
+            }
         </style>
 	</head>
 	<body>
-        <h1>Herro World</h1>
+        <h1>Example Phone Formset</h1>
+        <div class="input-group-table formset js--example-formset" data-prefix="phonenumber">
+            <input type="hidden" name="phonenumber-TOTAL_FORMS" value="1" id="id_phonenumber-TOTAL_FORMS"><input type="hidden" name="phonenumber-INITIAL_FORMS" value="0" id="id_phonenumber-INITIAL_FORMS"><input type="hidden" name="phonenumber-MAX_NUM_FORMS" id="id_phonenumber-MAX_NUM_FORMS">
+            <div class="row">
+                <div class="col-xs-3">
+                    <label>Number</label>
+                </div>
+                <div class="col-xs-2">
+                    <label>Extension</label>
+                </div>
+                <div class="col-xs-3">
+                    <label>Phone Type</label>
+                </div>
+            </div>
+            <div id="phonenumber_0" class="row formset-row" data-counter="0">
+                <div class="col-xs-3">
+                    <input id="id_phonenumber-0-number" type="text" class="form-control" name="phonenumber-0-number">
+                </div>
+                <div class="col-xs-2">
+                    <input id="id_phonenumber-0-extension" type="text" class="form-control" name="phonenumber-0-extension">
+                </div>
+                <div class="col-xs-3">
+                    <select id="id_phonenumber-0-phone_type" class="form-control" name="phonenumber-0-phone_type">
+                        <option value="">---------</option>
+                        <option value="home">Home</option>
+                        <option value="work" selected="selected">Work</option>
+                        <option value="cell">Cell</option>
+                        <option value="fax">Fax</option>
+                    </select>
+                </div>
+                <div class="col-xs-1">
+                    <button type="button" class="btn btn-danger btn-icon js--del-formset-row"><i class="fa fa-trash-o"></i></button>
+                    <span class="hidden"><input type="checkbox" name="phonenumber-0-DELETE" id="id_phonenumber-0-DELETE"></span>
+                </div>
+                <input type="hidden" name="phonenumber-0-parent" id="id_phonenumber-0-parent">
+                <input type="hidden" name="phonenumber-0-client" value="1" id="id_phonenumber-0-client">
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <button type="button" class="btn js--add-formset-row"><i class="fa fa-plus"></i> Add Number</button>
+                </div>
+            </div>
+        </div>
 
         <!-- bower:js -->
         <script src="../bower_components/jquery/dist/jquery.js"></script>
-        <script src="../bower_components/handlebars/handlebars.js"></script>
-        <script src="../bower_components/underscore/underscore.js"></script>
         <!-- endbower -->
 		<script src="../dist/js/jquery.django-formset.js"></script>
 		<script>
             $(function() {
-                $(".nt").djangoFormset();
+                $('.js--example-formset').djangoFormset();
             });
 		</script>
 	</body>

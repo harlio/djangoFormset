@@ -75,7 +75,7 @@ module.exports = function(grunt) {
 					"dist/js/jquery.django-formset.js": "src/js/jquery.django-formset.coffee"
 				}
 			}
-		}
+		},
 
         // Compile Scss
         sass: {

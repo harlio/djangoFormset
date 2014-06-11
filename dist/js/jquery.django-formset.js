@@ -1,3 +1,11 @@
+/*
+ *  jQuery Django Formset - v1.0.1
+ *  A simple and light javascript formset handler for django.
+ *  
+ *
+ *  Made by Harley Jessop
+ *  Under MIT License
+ */
 /*!
  * jQuery Multi Django Formset UI Handler
  * Original author: @harleyjessop
@@ -7,7 +15,7 @@
 ;(function ( $, window, document, undefined ) {
 
     // Create the defaults once
-    var pluginName = "multiFormset",
+    var pluginName = "djangoFormset",
         defaults = {
             formset:    ".formset",
             formsetRow: ".formset-row",
